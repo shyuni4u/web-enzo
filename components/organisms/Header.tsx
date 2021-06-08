@@ -2,12 +2,9 @@ import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
 import styled, { css, keyframes } from 'styled-components';
 import { BsGear, BsJustify, BsX } from 'react-icons/bs';
-// import { useAuth0 } from '@auth0/auth0-react';
 
 // import Button from '../atoms/Button';
 import MainMenu from './MainMenu';
-import reducerUsers from '../../reducers/reducerUser';
-// import { userState, RANK_GUEST } from '../../modules/user';
 // import ModnnConfig from '../../lib/setting.json';
 
 export type HeaderProps = {
@@ -191,7 +188,6 @@ const StyledMenuModalSmall = styled.div<StyledMenuModalSmallProps>`
 export const Header: React.FC<HeaderProps> = ({ paramMenu = undefined }) => {
   // const { isAuthenticated, user, loginWithPopup, logout, getAccessTokenSilently, getIdTokenClaims } = useAuth0();
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  const { gUser } = reducerUsers();
 
   // useEffect(() => {}, [isAuthenticated]);
 
