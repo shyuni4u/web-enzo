@@ -25,6 +25,7 @@ export class RootApp extends App {
         <Head>
           <title>Enzo Homepage</title>
           <link rel="shortcut icon" href="/favicon.ico" />
+          <script data-ad-client="ca-pub-7797435335029081" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         </Head>
         <NextNProgress />
         <Component {...other} />
