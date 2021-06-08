@@ -25,6 +25,14 @@ export class RootApp extends App {
         <Head>
           <title>Enzo Homepage</title>
           <link rel="shortcut icon" href="/favicon.ico" />
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="keywords" content="심리 테스트, 직업 추천, 월드 오브 워크래프트, 로스트 아크, MBTI"></meta>
+          <meta name="description" content="개발자 블로그" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="개발자 블로그" />
+          <meta property="og:description" content="개발자 블로그" />
+          <meta property="og:url" content="http://enzo.kr/" />
           <script data-ad-client="ca-pub-7797435335029081" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         </Head>
         <NextNProgress />
