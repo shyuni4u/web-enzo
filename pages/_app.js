@@ -33,7 +33,17 @@ export class RootApp extends App {
           <meta property="og:title" content="개발자 블로그" />
           <meta property="og:description" content="개발자 블로그" />
           <meta property="og:url" content="http://enzo.kr/" />
-          <script data-ad-client="ca-pub-7797435335029081" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                (adsbygoogle = window.adsbygoogle || []).push({
+                  google_ad_client: "ca-pub-7797435335029081",
+                  enable_page_level_ads: true
+                });
+              `
+            }}
+          />
         </Head>
         <NextNProgress />
         <Component {...other} />
