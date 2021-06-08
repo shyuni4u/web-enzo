@@ -83,7 +83,7 @@ export const Container: React.FC & { Aside: React.FC<ClassnameProp>; Main: React
       <StyledBody>
         <StyledFlexNowrap>{children}</StyledFlexNowrap>
       </StyledBody>
-      <StyledFooter>© MOREH : Corp All Rights Reserved.</StyledFooter>
+      <StyledFooter>© shyuniz : Corp All Rights Reserved.</StyledFooter>
     </StyledContainer>
   );
 };
