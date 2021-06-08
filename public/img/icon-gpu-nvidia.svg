@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="77" height="45" viewBox="0 0 77 45">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g>
+                            <path fill="#222" d="M2 0H38V73H2z" transform="translate(-710 -149) translate(281 69) translate(20 60) translate(409 20) rotate(90 38.5 38.5)"/>
+                            <path fill="#63920F" d="M2 0H6V73H2z" transform="translate(-710 -149) translate(281 69) translate(20 60) translate(409 20) rotate(90 38.5 38.5)"/>
+                            <path fill="gray" d="M0 73H45V74H0z" transform="translate(-710 -149) translate(281 69) translate(20 60) translate(409 20) rotate(90 38.5 38.5)"/>
+                            <path fill="gray" d="M0 73H1V77H0z" transform="translate(-710 -149) translate(281 69) translate(20 60) translate(409 20) rotate(90 38.5 38.5)"/>
+                            <path fill="#333" d="M38 32H40V61H38zM38 62H40V65H38z" transform="translate(-710 -149) translate(281 69) translate(20 60) translate(409 20) rotate(90 38.5 38.5)"/>
+                            <path fill="#D5A978" d="M40 32H41V61H40zM40 62H41V65H40z" transform="translate(-710 -149) translate(281 69) translate(20 60) translate(409 20) rotate(90 38.5 38.5)"/>
+                            <g transform="translate(-710 -149) translate(281 69) translate(20 60) translate(409 20) rotate(90 38.5 38.5) translate(9 4)">
+                                <circle cx="13" cy="13" r="13" fill="#373737"/>
+                                <circle cx="13" cy="13" r="11" fill="#222"/>
+                                <circle cx="13" cy="13" r="3" fill="#63920F"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+{
+  "modnn": {
+    "ip": "http://1.249.213.153:8080/api"
+  },
+  "whitelist": {
+    "amd": [
+      "PCI Bus",
+      "Card series",
+      "Serial Number",
+      "Unique ID",
+      "VBIOS version",
+      "sclk clock speed",
+      "mclk clock speed",
+      "average graphics package power",
+      "max graphics package power",
+      "Temperature (Sensor edge) (C)",
+      "Temperature (Sensor mem) (C)",
+      "GPU use (%)",
+      "GPU memory use (%)"
+    ],
+    "nvidia": [
+      "pci>pci_bus_id",
+      "pci>pci_gpu_link_info>pcie_gen>current_link_gen",
+      "pci>pci_gpu_link_info>link_widths>current_link_width",
+      "product_name",
+      "serial",
+      "uuid",
+      "vbios_version",
+      "clocks>sm_clock",
+      "clocks>mem_clock",
+      "power_readings>power_draw",
+      "power_readings>power_limit",
+      "temperature>gpu_temp",
+      "temperature>memory_temp",
+      "utilization>gpu_util",
+      "utilization>memory_util"
+    ]
+  },
+  "token": "Kubernetes token.(https://bryan.wiki/291)",
+  "nvidia-ip": "server-ip:port",
+  "amd-ip": "server-ip:port"
+}
