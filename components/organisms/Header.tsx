@@ -191,8 +191,10 @@ export const Header: React.FC<HeaderProps> = ({ paramMenu = undefined }) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
   useEffect(() => {
-    console.log(getAccessTokenSilently());
-    console.log(getIdTokenClaims());
+    if (isAuthenticated) {
+      console.log(getAccessTokenSilently());
+      console.log(getIdTokenClaims());
+    }
   }, [isAuthenticated]);
 
   return (
