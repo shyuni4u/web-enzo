@@ -15,7 +15,7 @@ export const Performance: React.FC = () => {
         <Container.Main>
           <ul style={{ margin: '10px auto' }}>
             <li style={{ marginBottom: '30px' }}>
-              <a href={'http://wow.enzo.kr'}>Auth0 TEST</a>
+              <a href={'http://wow.enzo.kr'}>Auth0 Login TEST</a>
             </li>
             <li style={{ marginBottom: '30px' }}>
               <a href={'http://wow.enzo.kr'}>월드 오브 워크래프트 직업 추천</a>

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
+import { useAuth0 } from '@auth0/auth0-react';
 import styled, { css, keyframes } from 'styled-components';
 import { BsGear, BsJustify, BsX } from 'react-icons/bs';
 
-// import Button from '../atoms/Button';
+import Button from '../atoms/Button';
 import MainMenu from './MainMenu';
 // import ModnnConfig from '../../lib/setting.json';
 
@@ -186,10 +187,13 @@ const StyledMenuModalSmall = styled.div<StyledMenuModalSmallProps>`
 `;
 
 export const Header: React.FC<HeaderProps> = ({ paramMenu = undefined }) => {
-  // const { isAuthenticated, user, loginWithPopup, logout, getAccessTokenSilently, getIdTokenClaims } = useAuth0();
+  const { isAuthenticated, user, loginWithPopup, logout, getAccessTokenSilently, getIdTokenClaims } = useAuth0();
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
-  // useEffect(() => {}, [isAuthenticated]);
+  useEffect(() => {
+    console.log(getAccessTokenSilently());
+    console.log(getIdTokenClaims());
+  }, [isAuthenticated]);
 
   return (
     <StyledHeader>
@@ -207,11 +211,17 @@ export const Header: React.FC<HeaderProps> = ({ paramMenu = undefined }) => {
           <hr />
           <MainMenu paramMenu={paramMenu} />
           <hr />
-          {/* <StyledUser style={{ paddingLeft: '15px' }}>
-            <Button size={'small'} onClick={() => Router.push({ pathname: '../setting' })}>
-              <BsGear /> Setting
-            </Button>
-          </StyledUser> */}
+          <StyledUser style={{ paddingLeft: '15px' }}>
+            {isAuthenticated ? (
+              <Button size={'small'} onClick={() => logout()}>
+                {user.name}
+              </Button>
+            ) : (
+              <Button size={'small'} onClick={() => loginWithPopup()}>
+                <BsGear /> Login
+              </Button>
+            )}
+          </StyledUser>
         </StyledMenuModalSmall>
       </StyledNavSmall>
       <StyledNav className={'col-sm-0'}>
@@ -219,11 +229,17 @@ export const Header: React.FC<HeaderProps> = ({ paramMenu = undefined }) => {
         <StyledMenus>
           <MainMenu paramMenu={paramMenu} />
         </StyledMenus>
-        {/* <StyledUser>
-          <Button size={'small'} onClick={() => Router.push({ pathname: '../setting' })}>
-            <BsGear /> Setting
-          </Button>
-        </StyledUser> */}
+        <StyledUser>
+          {isAuthenticated ? (
+            <Button size={'small'} onClick={() => logout()}>
+              {user.name}
+            </Button>
+          ) : (
+            <Button size={'small'} onClick={() => loginWithPopup()}>
+              <BsGear /> Login
+            </Button>
+          )}
+        </StyledUser>
       </StyledNav>
       <StyledBackground />
     </StyledHeader>
