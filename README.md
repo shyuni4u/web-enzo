@@ -7,7 +7,7 @@ Make kubernetes admin page
 ### Clone github repository
 
 ```console
-git clone https://github.com/moreh-dev/console.git
+git clone
 ```
 
 ### Install yarn packages
@@ -43,6 +43,7 @@ Runs `next start` which starts a Next.js production server.
 Usage:<br />
 
 ```console
+npx sb init
 start-storyboook [options]
 ```
 
