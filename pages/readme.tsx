@@ -5,8 +5,8 @@ import Wrapper from '../components/organisms/Wrapper';
 
 export const Readme: React.FC = () => {
   useEffect(() => {
-    console.log('asdf')
-  }, [])
+    // console.log('asdf')
+  }, []);
   // const [val, setVal] = useState<string>('');
 
   // useEffect(() => {
