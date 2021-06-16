@@ -10,21 +10,6 @@ const sizes = {
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
-  @font-face {
-    font-family: "Museo Sans";
-    /* src: url("/font/EXLJBRIS-MUSEOSANS-300.OTF"); */
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: "Noto Sans";
-    /* src: url("/font/NOTOSANSMONOCJKKR-REGULAR.OTF"); */
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-  }
 
   * {
     box-sizing: border-box;

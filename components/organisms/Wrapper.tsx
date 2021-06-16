@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { Auth0Provider } from '@auth0/auth0-react';
 import '../../locales/i18n';
 
 import GlobalStyle from '../../styles/global-styles';
@@ -53,13 +52,13 @@ export const Wrapper: React.FC = ({ children }) => {
   }, []);
 
   return (
-    <Auth0Provider domain="enzo-dev.us.auth0.com" clientId="xEBQkzTpRT6HoH8aevbczvOpxr9vR1XL" redirectUri={uri}>
+    <>
       <StyledToastContainer />
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <StyledWrapper>{children}</StyledWrapper>
       </ThemeProvider>
-    </Auth0Provider>
+    </>
   );
 };
 
