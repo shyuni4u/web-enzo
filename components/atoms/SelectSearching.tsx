@@ -210,7 +210,7 @@ export const SelectSearching: React.FC<SelectSearchingProps> = ({
         ? setSelectSearchingedItem(el)
         : setReadyItems((prev) => [...prev, el]);
     });
-  }, []);
+  }, [items]);
 
   useEffect(() => {
     if (inputValue === '') setFilteredItems(readyItems);
