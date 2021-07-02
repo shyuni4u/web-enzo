@@ -17,7 +17,7 @@ const Template: Story = () => {
     <Wrapper>
       <Container>
         <Container.Aside>Aside</Container.Aside>
-        <Container.Main>Main</Container.Main>
+        <Container.Wide>Main</Container.Wide>
       </Container>
     </Wrapper>
   );
@@ -30,7 +30,7 @@ const LongMainTemplate: Story = () => {
     <Wrapper>
       <Container>
         <Container.Aside>Aside</Container.Aside>
-        <Container.Main>{dummy}</Container.Main>
+        <Container.Wide>{dummy}</Container.Wide>
       </Container>
     </Wrapper>
   );

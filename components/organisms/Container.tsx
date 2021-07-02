@@ -75,9 +75,11 @@ const StyledFooter = styled.footer`
   }}
 `;
 
-export const Container: React.FC & { Aside: React.FC<ClassnameProp>; Main: React.FC<ClassnameProp> } = ({
-  children
-}) => {
+export const Container: React.FC & {
+  Aside: React.FC<ClassnameProp>;
+  Main: React.FC<ClassnameProp>;
+  Wide: React.FC<ClassnameProp>;
+} = ({ children }) => {
   return (
     <StyledContainer>
       <StyledBody>
@@ -107,7 +109,12 @@ const Main: React.FC<ClassnameProp> = ({ className = 'col-sm-12 col-md-9 col-lg-
   return <StyledMain className={className}>{children}</StyledMain>;
 };
 
+const Wide: React.FC<ClassnameProp> = ({ className = 'col-sm-12 col-md-12 col-lg-12 col-xl-12', children }) => {
+  return <StyledMain className={className}>{children}</StyledMain>;
+};
+
 Container.Aside = Aside;
-Container.Main = Main;
+Container.Wide = Main;
+Container.Wide = Wide;
 
 export default Container;

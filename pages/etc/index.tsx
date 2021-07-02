@@ -12,19 +12,7 @@ export const Index: React.FC = () => {
     <Wrapper>
       <Header paramMenu={recentMenu} />
       <Container>
-        <Container.Main>
-          <ul style={{ margin: '10px auto' }}>
-            <li style={{ marginBottom: '30px' }}>
-              <a href={'http://wow.enzo.kr'}>Auth0 Login TEST</a>
-            </li>
-            <li style={{ marginBottom: '30px' }}>
-              <a href={'http://wow.enzo.kr'}>월드 오브 워크래프트 직업 추천</a>
-            </li>
-            <li style={{ marginBottom: '30px' }}>
-              <a href={'http://lostark.enzo.kr'}>로스트 아크 직업 추천</a>
-            </li>
-          </ul>
-        </Container.Main>
+        <Container.Wide>ETC</Container.Wide>
       </Container>
     </Wrapper>
   );

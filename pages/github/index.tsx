@@ -4,6 +4,7 @@ import Wrapper from '../../components/organisms/Wrapper';
 import Header from '../../components/organisms/Header';
 import Container from '../../components/organisms/Container';
 import { menuList } from '../../components/organisms/MainMenu';
+import Github from '../../components/organisms/Github';
 
 export const Index: React.FC = () => {
   const recentMenu = menuList[2];
@@ -12,19 +13,17 @@ export const Index: React.FC = () => {
     <Wrapper>
       <Header paramMenu={recentMenu} />
       <Container>
-        <Container.Main>
-          <ul style={{ margin: '10px auto' }}>
-            <li style={{ marginBottom: '30px' }}>
-              <a href={'http://wow.enzo.kr'}>Auth0 Login TEST</a>
-            </li>
+        <Container.Wide>
+          <Github />
+          {/* <ul style={{ margin: '10px auto' }}>
             <li style={{ marginBottom: '30px' }}>
               <a href={'http://wow.enzo.kr'}>월드 오브 워크래프트 직업 추천</a>
             </li>
             <li style={{ marginBottom: '30px' }}>
               <a href={'http://lostark.enzo.kr'}>로스트 아크 직업 추천</a>
             </li>
-          </ul>
-        </Container.Main>
+          </ul> */}
+        </Container.Wide>
       </Container>
     </Wrapper>
   );

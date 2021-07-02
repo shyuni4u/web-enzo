@@ -12,7 +12,7 @@ export const Index: React.FC = () => {
     <Wrapper>
       <Header paramMenu={recentMenu} />
       <Container>
-        <Container.Main>Study</Container.Main>
+        <Container.Wide>Study</Container.Wide>
       </Container>
     </Wrapper>
   );
