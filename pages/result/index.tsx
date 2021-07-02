@@ -6,7 +6,7 @@ import Container from '../../components/organisms/Container';
 import { menuList } from '../../components/organisms/MainMenu';
 
 export const Index: React.FC = () => {
-  const recentMenu = menuList[4];
+  const recentMenu = menuList[2];
 
   return (
     <Wrapper>

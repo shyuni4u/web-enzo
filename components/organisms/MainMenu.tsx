@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Router from 'next/router';
 import MenuItem from '../../components/atoms/MenuItem';
 
-export const menuList: string[] = ['Intro', 'Big 5'];
+export const menuList: string[] = ['Home', 'Study', 'Result', 'Test', 'Etc'];
 
 export type MainMenuProps = {
   /**
@@ -22,12 +22,12 @@ export const MainMenu: React.FC<MainMenuProps> = ({ paramMenu = '' }) => {
           active={menu === el}
           onClick={() => {
             setMenu(el);
-            if (el === 'Intro') {
-              Router.push({ pathname: '../intro' });
-            }
-            if (el === 'Big 5') {
-              Router.push({ pathname: '../big5' });
-            }
+            if (el === 'Home') Router.push({ pathname: '../home' });
+            else if (el === 'Study') Router.push({ pathname: '../study' });
+            else if (el === 'Result') Router.push({ pathname: '../result' });
+            else if (el === 'Test') Router.push({ pathname: '../test' });
+            else if (el === 'Etc') Router.push({ pathname: '../etc' });
+            else Router.push({ pathname: '../home' });
           }}
         >
           {el}

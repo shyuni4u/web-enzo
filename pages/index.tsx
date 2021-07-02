@@ -1,12 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import Intro from './etc';
+import Home from './home';
 
 export const Index: React.FC = () => {
   const { t } = useTranslation();
 
-  return <Intro />;
+  return <Home />;
 };
 
 export default Index;
