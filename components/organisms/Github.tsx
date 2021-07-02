@@ -58,11 +58,11 @@ export const Github: React.FC = () => {
       {reposList.map((elRepos: any, elReposIdx: number) => {
         const languages = elRepos.languages;
         const reducer = (acc: number, cur: number) => acc + cur;
-        console.log(languages.edges);
-        const totalSize = languages.edges.map((elLanguagesEdge) => elLanguagesEdge.size).reduce(reducer);
+        // console.log(languages.edges);
+        // const totalSize = languages.edges.map((elLanguagesEdge) => elLanguagesEdge.size).reduce(reducer);
         return (
           <li key={elReposIdx}>
-            {elRepos.name} / {elRepos.description} / {totalSize}
+            {elRepos.name} / {elRepos.description} /{' '}
             <img
               className={'img'}
               src={
