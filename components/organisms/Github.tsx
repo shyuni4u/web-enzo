@@ -22,7 +22,7 @@ export const Github: React.FC = () => {
 
   useEffect(() => {
     const loadRepos = async () => {
-      const token = `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`; // Readonly
+      const token = process.env.REACT_APP_GITHUB_TOKEN; // Readonly
       const query = `
           query {
             viewer {

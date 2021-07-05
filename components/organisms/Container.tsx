@@ -76,9 +76,9 @@ const StyledFooter = styled.footer`
 `;
 
 export const Container: React.FC & {
-  Aside: React.FC<ClassnameProp>;
-  Main: React.FC<ClassnameProp>;
-  Wide: React.FC<ClassnameProp>;
+  Main?: React.FC<ClassnameProp>;
+  Aside?: React.FC<ClassnameProp>;
+  Wide?: React.FC<ClassnameProp>;
 } = ({ children }) => {
   return (
     <StyledContainer>
