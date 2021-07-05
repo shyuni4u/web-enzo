@@ -29,8 +29,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Install and Build
-        uses: actions/setup-node@v1
-        env : ${{ env.NEXT_PUBLIC_GITHUB_TOKEN }}
+        uses: actions/setup-node@v2.2.0
+        with :
+          NEXT_PUBLIC_GITHUB_TOKEN: ${{ env.NEXT_PUBLIC_GITHUB_TOKEN }}
       - run: |
           yarn install
           yarn build
