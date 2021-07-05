@@ -4,6 +4,7 @@ import Wrapper from '../../components/organisms/Wrapper';
 import Header from '../../components/organisms/Header';
 import Container from '../../components/organisms/Container';
 import { menuList } from '../../components/organisms/MainMenu';
+import Etc from '../../components/organisms/Etc';
 
 export const Index: React.FC = () => {
   const recentMenu = menuList[4];
@@ -12,7 +13,9 @@ export const Index: React.FC = () => {
     <Wrapper>
       <Header paramMenu={recentMenu} />
       <Container>
-        <Container.Wide>ETC</Container.Wide>
+        <Container.Wide>
+          <Etc />
+        </Container.Wide>
       </Container>
     </Wrapper>
   );

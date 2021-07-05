@@ -60,6 +60,11 @@ Object.keys(sizes).reduce((acc: Media, label: string) => {
 }, media);
 
 const colors = {
+  background: '#ffffff',
+  main: '#ff5700',
+  secondary: '#586069',
+  text: '#222222',
+
   black: '#222222',
   white: '#ffffff',
   gray8: '#888888',
@@ -67,7 +72,6 @@ const colors = {
   grayC: '#cccccc',
   grayE: '#eeeeee',
   grayF: '#f5f5f5',
-  main: '#ff5700',
   hover: '#fa8246',
   green: '#bdd67a',
   shadowgreen: '#8DC7A5',
@@ -81,6 +85,12 @@ const colors = {
 const secondaryColors = {};
 const fontFamily = ['Museo Sans', 'Noto Sans', 'Arial', 'Courier'].join(',');
 const fontSizes = {
+  header: '36px',
+  title: '24px',
+  name: '18px',
+  description: '14px',
+  tag: '12px',
+
   f36: '36px',
   f24: '24px',
   f18: '18px',
