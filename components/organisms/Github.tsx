@@ -22,7 +22,7 @@ export const Github: React.FC = () => {
 
   useEffect(() => {
     const loadRepos = async () => {
-      const token = process.env.REACT_APP_GITHUB_TOKEN; // Readonly
+      const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN; // Readonly (https://nextjs.org/docs/basic-features/environment-variables)
       const query = `
           query {
             viewer {
