@@ -43,8 +43,8 @@
     "styled-reset": "^4.2.3"
   },
   "scripts": {
-    "dev": "next dev -p 11000",
-    "build": "next build && next export",
+    "dev": "node createHtmlList.js && next dev -p 11000",
+    "build": "node createHtmlList.js && next build && next export",
     "start": "next start -p 11001",
     "sb": "start-storybook -s ./public -p 11009"
   },
